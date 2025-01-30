@@ -27,6 +27,13 @@ bitcoin = gets.chomp
 
 # 2. The value will be a string, so you'll want to convert it to a Float.
 bitcoin = bitcoin.to_f
+# puts bitcoin
 
 # 3. inspect the bitcoin_data hash
 # puts bitcoin_data
+
+total = bitcoin*84036.4225
+total = total.round(4)
+
+puts "#1 Bitcoin is valued at 84036.4225 USD"
+puts "Your Bitcoin is worth #{total} USD"
