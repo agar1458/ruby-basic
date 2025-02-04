@@ -15,3 +15,12 @@
 # rand(1..6)
 # Log output to the screen with puts:
 # puts "Hello, world"
+
+x = rand(1..6)
+puts x
+
+y = rand(1..6)
+puts y
+
+total = x + y
+puts "The total is #{total}"

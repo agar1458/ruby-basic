@@ -15,3 +15,16 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+my_list = ["milk", "eggs", "bacon"]
+friends_list = ["beer", "cookies", "apples"]
+
+shared_list = my_list + friends_list
+puts shared_list
+
+sorted_list = shared_list.sort
+puts sorted_list
+
+for x in sorted_list
+    puts "buy #{x}"
+end

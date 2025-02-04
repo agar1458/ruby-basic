@@ -30,10 +30,12 @@ bitcoin = bitcoin.to_f
 # puts bitcoin
 
 # 3. inspect the bitcoin_data hash
-# puts bitcoin_data
+puts bitcoin_data
 
-total = bitcoin*84036.4225
-total = total.round(4)
+usd_rate = bitcoin_data["bpi"]["USD"]["rate_float"]
+puts usd_rate
 
-puts "#1 Bitcoin is valued at 84036.4225 USD"
-puts "Your Bitcoin is worth #{total} USD"
+usd_value = usd_rate * bitcoin
+
+puts "1 Bitcoin is valued at #{usd_rate} USD"
+puts "Your Bitcoin is worth #{usd_value}."
